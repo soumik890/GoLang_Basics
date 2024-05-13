@@ -14,4 +14,11 @@ func main() {
 
 	fmt.Println(userInfo)
 	fmt.Println(userInfo["soumik"])
+	userInfo["santosh"] = 67
+	fmt.Println(userInfo)
+
+	for key, value := range userInfo {
+		fmt.Println(key, value, "****one by one iterarting*****")
+	}
+
 }
