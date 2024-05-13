@@ -18,5 +18,16 @@ func main() {
 	userOne.married = false
 
 	fmt.Println(userOne)
+	fmt.Println(userOne.name, userOne.age, userOne.married)
+
+	testVar := struct {
+		first string
+		last  string
+	}{
+		first: "soumik",
+		last:  "chakraborty",
+	}
+
+	fmt.Println(testVar, "***************")
 
 }
