@@ -7,14 +7,14 @@ type Person struct {
 	lastName  string
 }
 
-func (P Person) employee() {
-	fmt.Println("I am", P.firstName, P.lastName)
+func (P Person) employee() string {
+	return (P.firstName + " " + P.lastName)
 
 }
 
 func main() {
 	func() {
-		fmt.Println("fifteenth file auto call annonymous function")
+		fmt.Println("fifteenth file annonymous function")
 	}()
 
 	smk := Person{
@@ -22,6 +22,6 @@ func main() {
 		lastName:  "Chakraborty",
 	}
 
-	smk.employee()
+	fmt.Println(smk.employee())
 
 }
