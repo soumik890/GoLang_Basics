@@ -12,19 +12,16 @@ type Cat struct {
 }
 
 func (c Cat) GetInfo() string {
-	return fmt.Sprintln("name:",c.name, "color:", c.color)
+	return fmt.Sprintln("name:", c.name, "color:", c.color)
 }
 
 func printAnimal(item animal) {
 	fmt.Println(item.GetInfo())
-
 }
 
 func main() {
-
 	fmt.Println("20th file")
-
 	cat := Cat{name: "kitty", color: "orange"}
-
+	fmt.Println(cat.GetInfo())
 	printAnimal(cat)
 }
