@@ -7,12 +7,8 @@ func sendData(ch chan<- int) {
 }
 
 func main() {
-
 	channel := make(chan int)
 	go sendData(channel)
-
 	value := <-channel
-
 	fmt.Println("Received value is", value)
-
 }
